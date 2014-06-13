@@ -6,7 +6,7 @@
 # catalog-version 0.12d
 Name:		texlive-skrapport
 Version:	0.12d
-Release:	5
+Release:	6
 Summary:	'Simple' class for reports, etc
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/skrapport
