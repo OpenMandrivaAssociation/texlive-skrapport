@@ -1,19 +1,13 @@
-# revision 31718
-# category Package
-# catalog-ctan /macros/latex/contrib/skrapport
-# catalog-date 2013-09-21 11:27:06 +0200
-# catalog-license lppl1.3
-# catalog-version 0.12d
 Name:		texlive-skrapport
-Version:	0.12i
+Version:	52412
 Release:	1
 Summary:	'Simple' class for reports, etc
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/skrapport
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/skrapport.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/skrapport.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/skrapport.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/skrapport.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/skrapport.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/skrapport.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ straightforward; its design was inspired by that of the PracTeX
 journal style.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -52,7 +46,8 @@ journal style.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
