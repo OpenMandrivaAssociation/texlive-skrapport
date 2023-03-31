@@ -1,6 +1,6 @@
 Name:		texlive-skrapport
 Version:	52412
-Release:	1
+Release:	2
 Summary:	'Simple' class for reports, etc
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/skrapport
