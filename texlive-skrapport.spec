@@ -3,7 +3,7 @@ Version:	52412
 Release:	2
 Summary:	'Simple' class for reports, etc
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/skrapport
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/skrapport
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/skrapport.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/skrapport.doc.r%{version}.tar.xz
